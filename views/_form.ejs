@@ -1,0 +1,46 @@
+<form  method="post" id="update_user">
+    <div class="form-group">
+    <label for="Name">Name    :</label>
+    <input type="hidden" name="id" value='<%=user._id%>'>
+    <input type="text" name="name" value="<%=user.name%>" placeholder="Sagar">
+  </div>
+
+  <div class="form-group">
+      <label for="Email">Email   :</label>
+      <input type="email" name="email" value="<%=user.email%>" placeholder="Sagar@gmail.com">
+    </div>
+
+    <div class="form-group">
+      <label for="gender" class="option_label1">Gender   :</label>
+      <span >
+      <input type="radio" name="gender" value="Male" <%=user.gender=='Male'?'checked':''%>>
+      <label for="gender">Male</label>
+  </span>
+  <span>
+      <input type="radio" name="gender" value="Female" <%=user.gender=='Female'?'checked':''%> >
+      <label for="gender">Female</label>
+  </span>
+  </div>
+
+  <div class="form-group">
+      <label for="status" class="option_label2">Status  :</label>
+      <span>
+      <input type="radio" name="status" value="Active" <%=user.status=='Active'?'checked':''%> >
+      <label for="status">Active</label>
+  </span>
+  <span>
+      <input type="radio" name="status" value="Inactive" <%=user.status=='Inactive'?'checked':''%> >
+      <label for="status">Inactive</label>
+  </span>
+  </div>
+
+  <div class="form-group">
+      <span>
+      <button type="submit" class="button_form">Update</button>
+  </span>
+  <span>
+      <button type="reset" class="button_form">Reset</button>
+  </span>
+  </div>
+
+</form>

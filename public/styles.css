@@ -1,0 +1,41 @@
+.container-fluid {
+  text-align: center;
+}
+.table > table {
+  margin-left: auto;
+  margin-right: auto;
+}
+.new_user {
+  text-align: center;
+}
+.new_user > a {
+  text-decoration: none;
+}
+table,
+thead,
+tbody,
+td,
+th {
+  border: 1px solid black;
+  text-align: center;
+}
+thead {
+  background-color: rgb(27, 26, 26);
+  color: white;
+}
+.button_action {
+  background-color: rgb(27, 26, 26);
+  border: none;
+  color: white;
+  padding: 5px 10px 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-left: 30px;
+  margin-right: 30px;
+  cursor: pointer;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  border-radius: 10px;
+}

@@ -1,0 +1,17 @@
+<tbody>
+  <%for(let i=0;i<users.length;i++){%>
+    <tr>
+       <td><%=i+1%></td> 
+       <td><%=users[i].name%></td>
+       <td><%=users[i].email%></td>
+       <td><%=users[i].gender%></td>
+       <td><%=users[i].status%></td>
+       <td>
+           <a href="/update_user?id=<%=users[i]._id%>" class="button_action">
+         <span> <i class="fas fa-edit"></i></span></a>
+         <a class="button_action delete" data-id=<%=users[i]._id%>>
+          <span> <i class="fas fa-user-minus"></i></span></a>
+      </td>     
+    </tr>
+    <%}%>
+</tbody>
